@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="103dp"
+        android:layout_height="100sp"
+        android:layout_centerHorizontal="true"
+        android:translationY="70sp"
+        android:src="@mipmap/img" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:translationY="140sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text_background"
+        android:gravity="center"
+        android:hint="Your Name"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:translationY="180sp" />
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text_background"
+        android:gravity="center"
+        android:hint="Your Email"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:translationY="180sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editEmail"
+        android:background="@drawable/edit_text_background"
+        android:gravity="center"
+        android:hint="Your Password"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:translationY="180sp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:hint="Login"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:translationY="260sp"/>
+
+
+</RelativeLayout>
